@@ -87,6 +87,4 @@ app.use((err, req, res, next) => {
   res.send(err.message);
 });
 
-const listener = app.listen(process.env.PORT || 3000, () => {
-  console.log('Listening at port ' + listener.address().port);
-});
+const listener = app.listen(process.env.PORT || 3000, () => { console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env); });
