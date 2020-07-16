@@ -7,7 +7,7 @@
     "test": "src/test"
   },
   "scripts": {
-    "start": "babel-watch src/app.js",
+    "start": "node server.js",
     "heroku-postbuild": "npm run build",
     "test": "mocha src/test --opts src/test/mocha.opts",
     "build": "babel src -d dist --copy-files --no-comments && npm run remove-cache",
